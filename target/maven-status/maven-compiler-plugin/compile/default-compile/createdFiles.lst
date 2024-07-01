@@ -1,0 +1,8 @@
+com\cliente\controller\ClienteController.class
+com\cliente\DateTableClientes\DataInitializer.class
+com\cliente\dto\ClienteDTO.class
+com\cliente\service\ClienteService.class
+com\cliente\config\WebConfig.class
+com\cliente\entity\Cliente.class
+com\cliente\ClienteApplication.class
+com\cliente\repository\ClienteRepository.class
