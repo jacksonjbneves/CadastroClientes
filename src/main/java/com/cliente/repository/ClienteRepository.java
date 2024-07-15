@@ -13,7 +13,7 @@ import com.cliente.entity.Cliente;
  * @author Jackson
  */
 
-public interface ClienteRepository extends JpaRepository<Cliente, Long> {
+public interface ClienteRepository extends JpaRepository<Cliente, Integer> {
 
     
 }

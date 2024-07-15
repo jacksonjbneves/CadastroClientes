@@ -4,6 +4,7 @@
  */
 package com.cliente.controller;
 
+import com.cliente.DateTableClientes.DataInitializer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,7 +23,7 @@ import com.cliente.dto.ClienteDTO;
 
 @RestController
 @RequestMapping("/clientes")
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin(origins = "http://localhost")
 public class ClienteController {
     
     @Autowired
@@ -48,12 +49,12 @@ public class ClienteController {
     }
 
     @GetMapping("/{id}")
-    public Optional<Cliente> getClienteById(@PathVariable Long id) {
+    public Optional<Cliente> getClienteById(@PathVariable Integer id) {
         return clienteService.getClienteById(id);
     }
 
     @PutMapping("/update/{id}")
-    public Cliente updateCliente(@PathVariable Long id, @RequestBody ClienteDTO clienteDTO) {
+    public Cliente updateCliente(@PathVariable Integer id, @RequestBody ClienteDTO clienteDTO) {
         Optional<Cliente> optionalCliente = clienteService.getClienteById(id);
         if (optionalCliente.isPresent()) {
             Cliente cliente = optionalCliente.get();
@@ -66,7 +67,7 @@ public class ClienteController {
     }
 
     @DeleteMapping("/delete/{id}")
-    public void deleteCliente(@PathVariable Long id) {
+    public void deleteCliente(@PathVariable Integer id) {
         clienteService.deleteCliente(id);
     }
 }

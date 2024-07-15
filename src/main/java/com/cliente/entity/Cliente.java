@@ -18,20 +18,28 @@ public class Cliente {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long codigo;
+    private int codigo;
     private String nome;
     private String cpf;
     private int idade;
 
     public Cliente(){
+
+    }
+
+    public Cliente(String nome, String cpf, int idade) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.idade = idade;
     }
 
     // Getters and Setters
-    public Long getCodigo() {
-        return codigo;
+
+    public int getCodigo() {
+        return this.codigo;
     }
 
-    public void setCodigo(Long codigo) {
+    public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
 

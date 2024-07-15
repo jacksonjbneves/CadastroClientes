@@ -32,11 +32,11 @@ public class ClienteService {
         return clienteRepository.findAll();
     }
 
-    public Optional<Cliente> getClienteById(Long id) {
+    public Optional<Cliente> getClienteById(Integer id) {
         return clienteRepository.findById(id);
     }
 
-    public void deleteCliente(Long id) {
+    public void deleteCliente(Integer id) {
         clienteRepository.deleteById(id);
     }
     

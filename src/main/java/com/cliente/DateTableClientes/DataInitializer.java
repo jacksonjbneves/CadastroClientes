@@ -15,10 +15,9 @@ import org.springframework.stereotype.Component;
  * @author Jackson
  */
 
-//@Component
-//public class DataInitializer implements CommandLineRunner {
-public class DataInitializer{
-   /*
+@Component
+public class DataInitializer implements CommandLineRunner {
+    //public class DataInitializer{
     private final ClienteRepository clienteRepository;
 
     @Autowired
@@ -35,5 +34,12 @@ public class DataInitializer{
         clienteRepository.save(new Cliente("Ana Costa", "45678901234", 35));
         clienteRepository.save(new Cliente("Pedro Lima", "56789012345", 28));
     }
+
+    /*INSERT INTO cliente (codigo, nome, cpf, idade ) VALUES
+    (1, 'João Silva', '12345678901', 30),
+        (2, 'Maria Santos', '23456789012', 25),
+        (3, 'Carlos Oliveira', '34567890123', 40),
+        (4, 'Ana Costa', '45678901234', 35),
+        (5, 'Pedro Lima', '56789012345', 28);
     */
 }
