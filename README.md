@@ -7,7 +7,7 @@ CADASTRO DE CLIENTES
 **_:green_heart:Spring Boot(Back-End):green_heart: e BootStrap(Front-End)_**
 
 
-Neste repositorio esta feito um CRUD em Spring Boot, que tem a entidade Cliente, usando o Design DTO e Repository("DAO"). Banco de dados em H2 merante teste para validar os endpoints des projeto.
+Neste repositorio esta feito um CRUD em Spring Boot, que tem a entidade Cliente, usando o Design DTO e Repository("DAO"). Banco de dados em H2 merante teste para validar os endpoints deste projeto.
 
 O Front-End esta feito em BootStrap e JavaScript. Para acessar os HTTPs dos endpoints uso o Assincrono(async) e fetch(_tem trativas a serem melhoradas_).
 
